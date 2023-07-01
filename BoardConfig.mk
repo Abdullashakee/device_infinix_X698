@@ -181,13 +181,14 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
 # SHRP specific build flags
 
-SHRP_DEVICE_CODE := X6816
+SHRP_DEVICE_CODE := X698
 
 SHRP_PATH := device/infinix/$(SHRP_DEVICE_CODE)
 
-SHRP_MAINTAINER := IMY
+SHRP_MAINTAINER := Imy and abdulla
 
 SHRP_REC_TYPE := Normal
 
