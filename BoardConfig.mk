@@ -181,3 +181,33 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+# SHRP specific build flags
+
+SHRP_DEVICE_CODE := X6816
+
+SHRP_PATH := device/infinix/$(SHRP_DEVICE_CODE)
+
+SHRP_MAINTAINER := IMY
+
+SHRP_REC_TYPE := Normal
+
+SHRP_DEVICE_TYPE := A/B
+
+SHRP_AB := true
+
+SHRP_EXTERNAL := /external_sd
+
+SHRP_OTG := /usb_otg
+
+#Remove additional features as they are broken
+#and we don't have enough space in our boot partition
+
+SHRP_SKIP_DEFAULT_ADDON_1 := true
+
+SHRP_SKIP_DEFAULT_ADDON_2 := true
+
+SHRP_SKIP_DEFAULT_ADDON_3 := true
+
+SHRP_SKIP_DEFAULT_ADDON_4 := true
+
+SHRP_EXCLUDE_MAGISK_FLASH := true
